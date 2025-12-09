@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tayug Eco Park — Demo</title>
+
+<!-- Styles -->
+<link rel="stylesheet" href="styles.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+</head>
+
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#map">Map</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#review">Review</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero" id="hero">
+    <div class="hero-content">
+        <h1>Welcome to Tayug Eco Park</h1>
+        <p class="hero-sub">Stroll. Photograph. Relax. Experience the sunflower maze.</p>
+        <a class="cta" href="#activities">Explore Activities</a>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="reveal">
+    <h2>ABOUT 🌻</h2>
+    <p>
+        This place is known for its stunning scenery and peaceful environment. Visitors come here to
+        relax, explore, and enjoy the natural surroundings while learning about its cultural
+        significance. It continues to grow as a destination loved by travelers and locals alike.
+    </p>
+
+    <div class="about-images" style="margin-top:20px;">
+        <img src="Photos/IMG_1412-1536x1024.jpg" alt="Photo 1">
+        <img src="Photos/sunflower-1.jpg" alt="Photo 2">
+        <img src="Photos/sunfloweeerrrr.jpg" alt="Photo 3">
+    </div>
+
+    <h3>What is Tayug Eco Park — Overview</h3>
+    <ul>
+        <li>Tayug Eco Park is an agro-tourism / nature destination in Barangay C. Lichauco, Tayug, Pangasinan.</li>
+        <li>It is popularly known for its sunflower maze — among the first in the Philippines.</li>
+        <li>Besides sunflowers, the park features various types of flowers, ornamental plants, and vegetables.</li>
+        <li>The park offers a pleasant environment for strolling, photos, relaxation, and eco-themed tourism.</li>
+    </ul>
+</section>
+
+<!-- HISTORY -->
+<section id="history" class="reveal">
+    <h2>HISTORY</h2>
+    <h3>📅 When and How It Started</h3>
+    <p>The sunflower maze (“Sunflower Camp / Sunflower Maze”) at Tayug Eco Park was first opened to the public on February 17, 2017.</p>
+    <p>The maze was created on a 3-hectare demonstration farm owned by Allied Botanical Corporation (ABC), a vegetable-seed breeder/distributor.</p>
+    <p>The maze itself covered roughly 2,100 sqm within the larger farm area.</p>
+</section>
+
+<!-- MAP -->
+<section id="map" class="reveal">
+  <h2>Location — Tayug Sunflower Eco Park</h2>
+  <p>Visit us at: Barangay C. Lichauco, Tayug, Pangasinan — the home of the first sunflower maze in the Philippines. 🌻</p>
+
+ <div class="map-container">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20687.123456789!2d120.74445!3d15.97536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDU4JzMxLjMiTiAxMjDCsDQ0JzQ0LjUiRQ!5e0!3m2!1sen!2sph!4v0000000000"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+</div>
+
+<!-- ACTIVITIES -->
+<section id="activities" class="reveal">
+    <h2>Activities / Fees</h2>
+
+    <div class="activities-container">
+
+        <div class="activity-item">
+            <img src="Photos/sunmaze.jpg" alt="Sunflower Maze" class="activity-img" data-caption="Sunflower Maze — Php 100 entrance. Best at golden hour.">
+            <p>Sunflower Maze — Php 100</p>
+        </div>
+
+        <div class="activity-item">
+            <img src="Photos/enhanced.png" alt="Picnic Area" class="activity-img" data-caption="Picnic cottages and nipa huts available for rent.">
+            <p>Picnic & Rest — Cottage rental</p>
+        </div>
+
+        <div class="activity-item">
+            <img src="Photos/sunflowe4-022317.jpg" alt="Farm Tour" class="activity-img" data-caption="Guided farm tours: learn about sunflower & vegetable cultivation.">
+            <p>Farm Tour — Guide available</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- REVIEW -->
+<section id="review" class="reveal">
+    <h2>Personal Review</h2>
+
+    <form id="reviewForm" class="review-form" aria-label="Submit a review">
+        <div class="star-rating" role="radiogroup" aria-label="Rating">
+            <input type="radio" id="star5" name="rating" value="5"><label for="star5" title="5 stars"><i class="fas fa-star"></i></label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 stars"><i class="fas fa-star"></i></label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 stars"><i class="fas fa-star"></i></label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 stars"><i class="fas fa-star"></i></label>
+            <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 star"><i class="fas fa-star"></i></label>
+        </div>
+
+        <textarea class="review-textarea" id="reviewText" placeholder="Write your personal review here..." aria-label="Review text"></textarea>
+
+        <div class="review-actions">
+            <button type="submit" id="submitReview" class="btn">Submit Review</button>
+            <button type="button" id="clearReviews" class="btn alt">Clear All</button>
+        </div>
+    </form>
+
+    <div id="reviewsList" class="reviews-list" aria-live="polite">
+        <!-- Reviews will be appended here -->
+    </div>
+</section>
+
+<!-- MODAL (with caption & close) -->
+<div class="modal" id="imageModal" role="dialog" aria-hidden="true" aria-modal="true">
+    <div class="modal-inner" role="document">
+        <button class="modal-close" id="modalClose" aria-label="Close image">&times;</button>
+        <img id="modalImg" src="" alt="">
+        <p id="modalCaption" class="modal-caption"></p>
+    </div>
+</div>
+
+<footer>
+    <p>© Ocoma Kaiser | 2025</p>
+
+    <div class="footer-socials">
+        <a href="https://www.facebook.com/john.kaiser.944" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/maybe.kaiser/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/Maybe-Kai" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://discord.com/users/Johnkaizer0#6743" target="_blank" aria-label="Discord"><i class="fab fa-discord"></i></a>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="modal.js"></script>
+
+</body>
+</html>
