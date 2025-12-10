@@ -158,7 +158,7 @@ h2 {
 .map-container {
     position: relative;
     width: 100%;
-    padding-bottom: 56%; /* 16:9 ratio */
+    padding-bottom: 56%;
     height: 0;
     overflow: hidden;
     border-radius: 12px;
